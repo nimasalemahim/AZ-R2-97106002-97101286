@@ -1,6 +1,9 @@
 # Calculator
 Basic Calculator
 
+## Project Report
+First, We initialized the project with the .git file, main file, etc. After that, we created three branches, in order to implement different tasks and features. They were the master branch, develop branch, and develop-readme branch. We protected the main branch (Master) from being merged with other branches without any pull requests.
+Furthermore, The class Calculator was initiated, and we implemented different methods like add, sub, multiply, and divide for the calculator, in multiple commits and merge requests. We faced some merge conflicts during these implementations. We tried to resolve them by reviewing the conflicts, and adding what we needed from each version. 
 
 # Questions
 
