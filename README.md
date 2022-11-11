@@ -31,3 +31,9 @@ Git Pull on the other hand brings the copy of the remote directory changes into 
 ### Merge
 Git merge command is the positive conclusion of your decision to incorporate the changes you saw using the Git fetch command.
 
+## Q4
+### Clone
+git clone is primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location.
+### Rebase
+Rebasing is the process of moving or combining a sequence of commits to a new base commit. 
+
