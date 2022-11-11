@@ -22,3 +22,8 @@ Another way to define an atomic commit is one that can be reverted without any u
 ### What is pull request ?
 A pull request is an event in Git where a contributor asks a maintainer of a Git repository to review code they want to merge into a project.
 
+## Q5
+### What is Git Reset?
+At the commit level (where we change whole commits), resetting is a way to move the the current tip of a branch to a previous commit. This can be done to remove commits from the current branch that we no longer want, or to undo any changes that have been made. An example of this is moving the branch new-feature back two commits from the current HEAD using the following command:
+
+``` git checkout new-feature reset HEAD~2 ```
