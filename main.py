@@ -14,6 +14,12 @@ class Calculator:
     def add(self, num1, num2):
         return num1 + num2
 
+    def mult(self, num1, num2):
+        return num1 * num2
+
+    def div(self, num1, num2):
+        return num1 / num2
+
 
 add_regex = re.compile(r'(\d+) \+ (\d+)')
 sub_regex = re.compile(r'(\d+) - (\d+)')
@@ -24,3 +30,4 @@ div_regex = re.compile(r'(\d+) / (\d+)')
 exit_command = 'Exit'
 calculator = Calculator()
 command = input("Enter Your Phrase : ")
+
