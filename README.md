@@ -19,6 +19,7 @@ HEAD: This file stores reference to the current branch. It points to the master 
 ## Q2
 ### What is atomic commit ?
 Another way to define an atomic commit is one that can be reverted without any unwanted side effects or regressions, aside from what you'd expect based on its message. If a commit is removed from your git commit history but doing so removes other legitimate changes, then that commit wasn't atomic.
+
 ### What is pull request ?
 A pull request is an event in Git where a contributor asks a maintainer of a Git repository to review code they want to merge into a project.
 
