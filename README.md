@@ -23,3 +23,11 @@ Another way to define an atomic commit is one that can be reverted without any u
 ### What is pull request ?
 A pull request is an event in Git where a contributor asks a maintainer of a Git repository to review code they want to merge into a project.
 
+## Q3
+### Fetch
+Git Fetch is the command that tells the local repository that there are changes available in the remote repository without bringing the changes into the local repository.
+### Pull
+Git Pull on the other hand brings the copy of the remote directory changes into the local repository.
+### Merge
+Git merge command is the positive conclusion of your decision to incorporate the changes you saw using the Git fetch command.
+
