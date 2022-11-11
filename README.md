@@ -38,7 +38,17 @@ git clone is primarily used to point to an existing repo and make a clone or cop
 Rebasing is the process of moving or combining a sequence of commits to a new base commit. 
 
 ## Q5
-### What is Git Reset?
+git reset and git revert are both useful commands for undoing changes that have been made in previous commits. While git reset does this by moving the current head of the branch back to the specified commit, thereby changing the commit history, git revert does this by creating a new commit that undoes the changes in the specified commit and so does not change the history. This means that when you want to undo the changes in multiple commits, git reset may be more useful but should mostly be used only when changes have not been made public, while git revert can be used when only a specific commit needs to be undone and can be used even when the changes have been made public. 
+### Reset
 At the commit level (where we change whole commits), resetting is a way to move the the current tip of a branch to a previous commit. This can be done to remove commits from the current branch that we no longer want, or to undo any changes that have been made. An example of this is moving the branch new-feature back two commits from the current HEAD using the following command:
-
 ``` git checkout new-feature reset HEAD~2 ```
+### Revert
+While git reset should mostly be used on non-public branches of repositories there are times when you want to undo a change that has been made to a public repository. This could be because the changes made introduced an unexpected bug or the change itself wasn’t needed. In this scenario, git revert should be used instead of git reset .
+This is because reverting undoes a commit by creating a new one. This makes it a safe way for undoing changes in a public commit history as it does not overwrite any of that history, rather it just undoes all of those changes in a new commit. An example of this is when you want to undo the changes made in commit B , you can use git revert B to create a new commit that undoes all of those changes. In doing so, git figures out the changes that were made in B , undoes all of those changes if possible, and then will add a new commit onto the existing project as follows:
+```git revert B ```
+
+## Q6
+### Stage
+Staged means that you have marked a modified file in its current version to go into your next commit snapshot.
+### Snapshot
+A snapshot is a representation of the current state of your tracked files in the form of a manifest, which can be compared with other manifests to see where the differences are. Git only tracks the differences between manifests from the first moment it was tracked.
