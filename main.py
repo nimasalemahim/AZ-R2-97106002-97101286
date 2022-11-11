@@ -8,8 +8,7 @@ class Calculator:
         pass
 
     def sub(self, num1, num2):
-        sub = num1 - num2
-        return sub
+        return num1 - num2
 
     def add(self, num1, num2):
         return num1 + num2
@@ -31,3 +30,6 @@ exit_command = 'Exit'
 calculator = Calculator()
 command = input("Enter Your Phrase : ")
 
+
+print("Clculator process is done!")
+print("If you have other orders, restart the calculator.")
