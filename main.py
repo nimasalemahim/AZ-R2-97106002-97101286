@@ -31,3 +31,31 @@ exit_command = 'Exit'
 calculator = Calculator()
 command = input("Enter Your Phrase : ")
 
+while command != exit_command:
+
+    if add_regex.match(command):
+        num1, num2 = add_regex.search(command).groups()
+        res = calculator.add(int(num1), int(num2))
+        print(f'Result : {res}')
+    elif sub_regex.match(command):
+        num1, num2 = sub_regex.search(command).groups()
+        res = calculator.sub(int(num1), int(num2))
+        print(f'Result : {res}')
+    elif mul_regex.match(command):
+        num1, num2 = mul_regex.search(command).groups()
+        res = calculator.mult(int(num1), int(num2))
+        print(f'Result : {res}')
+
+    elif div_regex.match(command):
+        num1, num2 = div_regex.search(command).groups()
+        res = calculator.div(int(num1), int(num2))
+        print(f'Result : {res}')
+    else:
+        print('Invalid Command')
+
+    command = input("Enter Your Phrase : ")
+
+
+
+
+
